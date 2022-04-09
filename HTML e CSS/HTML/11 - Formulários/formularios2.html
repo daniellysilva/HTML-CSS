@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form id="form.cadastro" action="cadastros.php" method="post">
+        <fieldset>
+            <legend>Informações</legend>
+            Quantidade: <br>
+            <input type="number" name="quantidade" min="0" max="500" step="10"> <br>
+            <input type="range" name="quantidade" id="">
+            Cor <br>
+            <input type="color" name="cor"><br>
+            Email <br>
+            <input type="email" name="email" autocomplete="on" placeholder="seuemail@gmail.com"><br><br>
+            Imagem <br><br>
+            <input type="file" name="imagem"><br><br>
+
+            <input type="hidden" name="id"><br><br>
+            
+            URL: <br>
+            <input type="url" name="site"><br><br>
+
+            Escolha um curso: <br>
+            <input name="cursos" list="lista-cursos">
+            <datalist id="lista-cursos">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="Javasript"></option>
+                <option value="Java"></option>
+                <option value="React"></option>
+            </datalist><br><br>
+
+            Search <br>
+            <input type="search" name="pesquisa"><br><br>
+
+            Telefone <br>
+            <input type="tel" name="telefone"><br><br>
+
+            Data <br>
+            <input type="date" name="data" min="2000-12-31" max="2022-04-07"><br><br>
+
+            Hora <br>
+            <input type="time" name="hora"> <br><br>
+
+            Mês e ano <br>
+            <input type="month" name="mes-ano"> <br><br>
+
+            Semana <br>
+            <input type="week" name="semana"> <br><br>
+
+            Mensagem <br>
+            <textarea name="mensagem" id="" cols="30" rows="5" spellcheck="false"></textarea><br><br>
+            <button type="button">Clique me</button><br><br>
+
+            Escolha o seu veículo <br>
+            <select name="veiculo" id="">
+                <optgroup label="Carros">
+                    <option value="camaro"> Camaro</option>
+                    <option value="Prisma"> Prisma</option>
+                </optgroup>
+                <optgroup label="Motos">
+                    <option value="pop100" selected> Pop100</option>
+                    <option value="zig-50"> Zig-50</option>
+                </optgroup>
+
+            </select><br><br>
+            
+            
+            Data e hora: <br>
+            <input type="datetime-local" name="data-hora"> <br><br>
+
+
+            <input type="submit" name="btn-enviar" value="Enviar">
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

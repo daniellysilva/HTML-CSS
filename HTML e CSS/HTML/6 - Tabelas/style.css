@@ -1,0 +1,26 @@
+table, th, td{
+    border: 1px solid #000;
+}
+th, td{
+    padding: 7px;
+}
+
+.nome{
+    background-color: blue;
+}
+
+.email{
+    background-color: red;
+}
+
+.telefone{
+    background-color: gray;
+}
+
+.endereco{
+    background-color: green;
+}
+
+.cargo{
+    background-color: beige;
+}
